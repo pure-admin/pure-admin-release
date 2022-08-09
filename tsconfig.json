@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "pretty": true,
+    "sourceMap": false,
+    "module": "esnext",
+    "target": "esnext",
+    "declaration": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "lib": ["ESNext", "ES6", "DOM"],
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+  },
+  "types": ["node"],
+  "include": ["src/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

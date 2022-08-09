@@ -1,0 +1,7 @@
+dist
+node_modules
+*.d.ts
+types.ts
+docs
+.DS_Store
+src/.DS_Store
