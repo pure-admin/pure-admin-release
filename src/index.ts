@@ -45,7 +45,7 @@ const command = async (name: string) => {
   const currentBranch = (await git.branch()).current;
   await spawn("npm", ["run", "build"], { cwd: getCwd() });
   await spawn("npm", ["version", name], { cwd: getCwd() });
-  await spawn("npm", ["publish", "--access public"], { cwd: getCwd() });
+  await spawn("npm", ["publish", "--access", "public"], { cwd: getCwd() });
   utils.getPackageSize({
     callback: (size: string) => {
       log(
