@@ -19,6 +19,28 @@ or
 pnpm add @pureadmin/release -D
 ```
 
+## 🦄 Usage
+
+1.Add the following code to `scripts` of `package.json`
+
+```json
+"scripts": {
+  "pub": "pub"
+}
+```
+
+2.Execute the automatic release command
+
+```bash
+npm run pub
+or
+pnpm pub
+```
+
+## 🌞 Attention
+
+- Please make sure to clear the current `git` staging area before executing the auto-release command
+
 ## LICENSE
 
 [MIT © xiaoxian521-2022](./LICENSE)
