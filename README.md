@@ -9,7 +9,7 @@
 <a href="https://www.npmjs.com/package/@pureadmin/release" target="__blank"><img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@pureadmin/release?color=50a36f&label="></a>
 </p>
 
-简体中文 | [English](./README.en-US.md) 
+**中文** | [English](./README.en-US.md)
 
 ## 📦 安装
 

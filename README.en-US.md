@@ -9,7 +9,7 @@ Super simple package tool (according to the selected version, automatically pack
 <a href="https://www.npmjs.com/package/@pureadmin/release" target="__blank"><img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@pureadmin/release?color=50a36f&label="></a>
 </p>
 
-English | [简体中文](./README.md) 
+**English** | [中文](./README.md)
 
 ## 📦 Install
 
