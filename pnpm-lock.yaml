@@ -4,7 +4,7 @@ specifiers:
   '@commitlint/cli': ^17.0.2
   '@commitlint/config-conventional': ^17.0.2
   '@esbuild-kit/cjs-loader': ^2.1.0
-  '@pureadmin/utils': ^0.0.33
+  '@pureadmin/utils': ^0.1.1
   '@types/inquirer': ^9.0.0
   '@types/node': ^17.0.42
   '@typescript-eslint/eslint-plugin': ^5.27.0
@@ -27,7 +27,7 @@ devDependencies:
   '@commitlint/cli': 17.0.3
   '@commitlint/config-conventional': 17.0.3
   '@esbuild-kit/cjs-loader': 2.3.3
-  '@pureadmin/utils': 0.0.33
+  '@pureadmin/utils': 0.1.1
   '@types/inquirer': 9.0.0
   '@types/node': 17.0.45
   '@typescript-eslint/eslint-plugin': 5.33.0_6a5aeee3f1c697a58988a7278b5d566c
@@ -351,8 +351,8 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@pureadmin/utils/0.0.33:
-    resolution: {integrity: sha512-9nxq07gjBDO2CxlpdXQptjY4IcAdDebJcht4sawqs0F8IPfMUR8j3YnU4Weyx/bDv0V/7ePM9yX98uGq3xhBfQ==}
+  /@pureadmin/utils/0.1.1:
+    resolution: {integrity: sha512-J6WTyo5Ej4Ki0/UHDUGpIWQHRTifjnT6ThGa1mz7SNMzMjL+JOauDl7pmDifmAtp9ePH0XPfkK1QtvkrrG7Rfw==}
     peerDependencies:
       dayjs: '*'
       echarts: ^5.3.0
