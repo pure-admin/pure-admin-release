@@ -1,6 +1,6 @@
 {
   "name": "@pureadmin/release",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "packageManager": "pnpm@7.0.1",
   "description": "pureadmin release",
   "main": "bin/publish.js",
