@@ -21,7 +21,7 @@ pnpm add @pureadmin/release -D
 
 ## 🦄 Usage
 
-1.Add the following code to `scripts` of `package.json`
+1. Add the following code in `scripts` of `package.json`
 
 ```json
 "scripts": {
@@ -29,7 +29,7 @@ pnpm add @pureadmin/release -D
 }
 ```
 
-2.Execute the automatic release command
+2. Execute the automatic release command
 
 ```bash
 npm run pub
@@ -39,9 +39,15 @@ pnpm pub
 
 ## 🌞 Attention
 
-- Please make sure to clear the current `git` staging area before executing the auto-release command
+1. Please make sure that the current `git` temporary storage area is cleared before executing the automatic release command
+2. By default, `npm run build` will be used for packaging. If the current packaging command is not `build`, such as `npm run lib`, modify the `scripts` of `package.json` as follows
+
+```json
+"scripts": {
+  "pub": "pub lib"
+}
+```
 
 ## LICENSE
 
-[MIT © xiaoxian521-2022](./LICENSE)
-
+[MIT © xiaoxian521-Latest](./LICENSE)

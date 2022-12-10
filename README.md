@@ -21,7 +21,7 @@ pnpm add @pureadmin/release -D
 
 ## 🦄 用法
 
-1.在`package.json`的`scripts`中加入下面代码
+1. 在 `package.json` 的 `scripts` 中加入下面代码
 
 ```json
 "scripts": {
@@ -29,7 +29,7 @@ pnpm add @pureadmin/release -D
 }
 ```
 
-2.执行自动发版命令
+2. 执行自动发版命令
 
 ```bash
 npm run pub
@@ -39,8 +39,15 @@ pnpm pub
 
 ## 🌞 注意
 
-- 请确保在执行自动发版命令前，清空当前`git`暂存区
+1. 请确保在执行自动发版命令前，清空当前 `git` 暂存区
+2. 默认会使用 `npm run build` 打包，如当前打包命令不是 `build` ，比如是 `npm run lib` ，修改 `package.json` 的 `scripts` 如下面代码
+
+```json
+"scripts": {
+  "pub": "pub lib"
+}
+```
 
 ## 许可证
 
-[MIT © xiaoxian521-2022](./LICENSE)
+[MIT © xiaoxian521-Latest](./LICENSE)
