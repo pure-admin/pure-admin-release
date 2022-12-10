@@ -2,6 +2,8 @@ import inquirer from "inquirer";
 import { green } from "picocolors";
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const utils = require("@pureadmin/utils");
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const args = require("minimist")(process.argv.slice(2));
 
 import simpleGit, { type SimpleGitOptions, type SimpleGit } from "simple-git";
 
@@ -43,7 +45,9 @@ const spawn = async (...args: any[]) => {
 const command = async (name: string) => {
   const git: SimpleGit = simpleGit(gitOptions);
   const currentBranch = (await git.branch()).current;
-  await spawn("npm", ["run", "build"], { cwd: getCwd() });
+  await spawn("npm", ["run", args._[0] ? args._[0] : "build"], {
+    cwd: getCwd()
+  });
   await spawn("npm", ["version", name], { cwd: getCwd() });
   await spawn("npm", ["publish", "--access", "public"], { cwd: getCwd() });
   utils.getPackageSize({
