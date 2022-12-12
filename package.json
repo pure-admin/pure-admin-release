@@ -21,6 +21,9 @@
     "type": "git",
     "url": "https://github.com/xiaoxian521/pure-admin-release"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "files": [
     "dist",
     "bin"
