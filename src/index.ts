@@ -1,3 +1,4 @@
+import os from "os";
 import inquirer from "inquirer";
 import { green } from "picocolors";
 // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -45,11 +46,13 @@ const spawn = async (...args: any[]) => {
 const command = async (name: string) => {
   const git: SimpleGit = simpleGit(gitOptions);
   const currentBranch = (await git.branch()).current;
-  await spawn("npm", ["run", args._[0] ? args._[0] : "build"], {
+  // fix: Error: spawn npm ENOENT in Windows
+  const npm = os.type() === "Windows_NT" ? "npm.cmd" : "npm";
+  await spawn(npm, ["run", args._[0] ? args._[0] : "build"], {
     cwd: getCwd()
   });
-  await spawn("npm", ["version", name], { cwd: getCwd() });
-  await spawn("npm", ["publish", "--access", "public"], { cwd: getCwd() });
+  await spawn(npm, ["version", name], { cwd: getCwd() });
+  await spawn(npm, ["publish", "--access", "public"], { cwd: getCwd() });
   utils.getPackageSize({
     callback: (size: string) => {
       log(
