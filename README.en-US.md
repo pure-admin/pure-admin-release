@@ -1,25 +1,26 @@
 <p align="center">
 @pureadmin/release  
 <br />
-Super simple package tool (according to the selected version, automatically package, calculate and display the packaged file size, publish npm, submit git)
+Super simple package distribution tool (modify version number and submit to git, automatically package, publish to npm, calculate and display the packaged file size)
 </p>
 
 <p align="center">
 <a href="https://www.npmjs.com/package/@pureadmin/release" target="__blank"><img src="https://img.shields.io/npm/v/@pureadmin/release?color=a1b858&label=" alt="NPM version"></a>
-<a href="https://www.npmjs.com/package/@pureadmin/release" target="__blank"><img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@pureadmin/release?color=50a36f&label="></a>
 </p>
 
-**English** | [中文](./README.md)
+English | [简体中文](./README.md)
 
 ## 📦 Install
 
 ```bash
 npm install @pureadmin/release -D
-or
+# or
+yarn add @pureadmin/release -D
+# or
 pnpm add @pureadmin/release -D
 ```
 
-## 🦄 Usage
+## ⚙️ Usage
 
 1. Add the following code in `scripts` of `package.json`
 
@@ -33,11 +34,13 @@ pnpm add @pureadmin/release -D
 
 ```bash
 npm run pub
-or
+# or
+yarn pub
+# or
 pnpm pub
 ```
 
-## 🌞 Attention
+## ⚠️ Attention
 
 1. Please make sure that the current `git` temporary storage area is cleared before executing the automatic release command
 2. By default, `npm run build` will be used for packaging. If the current packaging command is not `build`, such as `npm run lib`, modify the `scripts` of `package.json` as follows
@@ -47,7 +50,6 @@ pnpm pub
   "pub": "pub lib"
 }
 ```
+## License
 
-## LICENSE
-
-[MIT © xiaoxian521-Latest](./LICENSE)
+[MIT © 2022-present, pure-admin](./LICENSE)

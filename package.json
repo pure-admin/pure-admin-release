@@ -2,13 +2,15 @@
   "name": "@pureadmin/release",
   "version": "1.0.0",
   "packageManager": "pnpm@8.6.10",
-  "description": "pureadmin release",
+  "description": "超简单的发包工具（修改版本号并提交git、自动打包、发布npm、计算并显示打包后文件大小）",
   "main": "bin/publish.js",
   "bin": {
     "pub": "bin/publish.js"
   },
   "keywords": [
     "@pureadmin/release",
+    "pure-admin-release",
+    "npm-publish-tool",
     "typescript"
   ],
   "homepage": "https://github.com/xiaoxian521/pure-admin-release/tree/main/#readme",
